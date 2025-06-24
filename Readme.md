@@ -4,6 +4,8 @@
 
 This project is a simple RESTful API for managing quotes. It allows clients to retrieve a list of quotes and add new ones. The quotes are stored in an in-memory array, which means all data will be reset when the server restarts.
 
+**Live URL:** [https://simple-quote-api.onrender.com](https://simple-quote-api.onrender.com)
+
 ## Features
 
 - `GET /quotes` – Retrieve all quotes
@@ -15,5 +17,4 @@ This project is a simple RESTful API for managing quotes. It allows clients to r
 - Express.js
 - Postman (for API testing)
 
-[Download Postman Collection](./Simple%20Quote%20API.postman_collection.json)
-
+[Download Postman Collection](./Simple-Quote-API.postman_collection.json)
