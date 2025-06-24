@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "77b6956e-7409-4bdb-91ad-55ed295b50e9",
+		"name": "Simple-Quote-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40371069"
+	},
+	"item": [
+		{
+			"name": "quote",
+			"item": [
+				{
+					"name": "get-quotes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://simple-quote-api.onrender.com/api/v1/quotes",
+							"protocol": "https",
+							"host": [
+								"simple-quote-api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"quotes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post-quote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quote\": \"The best way to predict the future is to invent it.\",\r\n    \"author\": \" The best way to predict the future is to invent it.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://simple-quote-api.onrender.com/api/v1/quotes",
+							"protocol": "https",
+							"host": [
+								"simple-quote-api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"quotes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "base-url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://simple-quote-api.onrender.com",
+					"protocol": "https",
+					"host": [
+						"simple-quote-api",
+						"onrender",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
