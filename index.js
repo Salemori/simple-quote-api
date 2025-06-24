@@ -1,4 +1,5 @@
 const express = require("express");
+const quoteRouter = require("./routers/quoteRouter");
 require("dotenv").config();
 
 
@@ -6,7 +7,9 @@ const app = express();
 
 app.use(express.json());
 
-const port = "8080";
+app.use("/api/v1", quoteRouter);
+
+const port = process.env.PORT_ONE || process.env.PORT_TWO;
 
 app.listen(port, ()=> console.log(`Server running at http://localhost:${port}`));
 
